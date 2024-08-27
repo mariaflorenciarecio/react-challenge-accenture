@@ -1,0 +1,92 @@
+.item-detail {
+  @apply bg-white w-full px-[14px] pt-[12px] pb-[67.5px] lg:pt-[40px] lg:pb-[108px];
+  min-height: calc(100vh - 230px);
+
+  @media (min-width: 1024px) {
+    min-height: calc(100vh - 158px);
+  }
+}
+
+.item-detail__container {
+  @apply flex flex-col lg:flex-row w-full max-w-[1088px] mx-auto justify-center items-center lg:items-start gap-[16px];
+}
+
+.item-detail__images {
+  @apply lg:w-1/2 overflow-hidden cursor-pointer;
+}
+
+.item-detail__image--a {
+  @apply transition-opacity ease-in-out inset-0 w-full h-full object-cover group-hover:opacity-0;
+}
+
+.item-detail__image--b {
+  @apply transition-opacity ease-in-out w-full h-full object-cover;
+}
+
+.item-detail__info {
+  @apply w-full lg:w-1/2;
+}
+
+.item-detail__info-general {
+  @apply flex flex-col justify-between items-start;
+}
+
+.item-detail__title {
+  @apply text-black font-black text-xlarge leading-xlarge capitalize;
+}
+
+.item-detail__subtitle {
+  @apply text-black font-black text-large leading-large capitalize;
+}
+
+.item-detail__text {
+  @apply text-black font-normal text-medium leading-medium mt-[16px];
+}
+
+.item-detail__highlight {
+  @apply text-black font-black text-large leading-large;
+}
+
+.item-detail__button {
+  @apply text-base text-black font-black leading-normal uppercase select-none border border-black bg-purple text-white focus:outline-none focus:ring-transparent p-[12px] mt-[24px] w-max;
+}
+
+.item-detail__counter-container {
+  @apply flex flex-col space-y-[32px] mt-[24px];
+}
+
+.item-detail__breadcrumbs {
+  @apply hidden lg:flex flex-row w-full max-w-[1088px] mx-auto gap-[8px] pb-[16px] items-center capitalize;
+}
+
+.item-detail__details-container,
+.item-detail__benefits-container {
+  @apply mt-[16px];
+}
+
+.item-detail__details-content,
+.item-detail__benefits-content {
+  @apply mt-[8px] w-11/12 text-black font-normal text-medium leading-medium;
+}
+
+.item-detail__toggle-button {
+  @apply cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white;
+}
+
+.item-detail__back-to-category {
+  @apply flex flex-row items-center mt-[8px];
+}
+
+.item-detail__back-to-home-link,
+.item-detail__back-to-category-link,
+.item-detail__back-to-category {
+  @apply text-black font-normal text-medium leading-medium;
+}
+
+.item-detail__back-to-category-icon {
+  @apply h-[16px] w-[16px] mr-[4px];
+}
+
+.item-detail__product {
+  @apply text-black font-black text-medium leading-medium;
+}

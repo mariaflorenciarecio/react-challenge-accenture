@@ -1,0 +1,27 @@
+.item {
+  @apply relative overflow-hidden;
+}
+
+.item__link {
+  @apply w-full overflow-hidden border-b border-black;
+}
+
+.item__image-a {
+  @apply ease-in-out transition-opacity group-hover:opacity-0;
+}
+
+.item__image-b {
+  @apply w-full h-full object-cover ease-in-out transition-opacity;
+}
+
+.item__description {
+  @apply flex flex-col justify-start pt-[9px] gap-[5px] lg:pt-[7px] lg:gap-[4px];
+}
+
+.item__name {
+  @apply text-black font-normal text-large leading-large capitalize lg:text-medium lg:leading-medium;
+}
+
+.item__price {
+  @apply text-black font-black text-large leading-large capitalize lg:text-medium lg:leading-medium;
+}

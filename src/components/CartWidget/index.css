@@ -1,0 +1,11 @@
+.cart-widget {
+  @apply ml-[10px] flex items-center relative;
+}
+
+.cart-widget__icon {
+  @apply h-[24px] text-white;
+}
+
+.cart-widget__count {
+  @apply text-purple font-black text-tiny bg-white rounded-full border border-purple h-[20px] w-[20px] flex items-center justify-center absolute left-[20px] bottom-[16px];
+}

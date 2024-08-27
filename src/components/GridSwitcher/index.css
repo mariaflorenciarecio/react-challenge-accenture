@@ -1,0 +1,23 @@
+.grid-switcher {
+  @apply ml-auto;
+}
+
+.grid-switcher__mobile {
+  @apply flex lg:hidden gap-x-[8px];
+}
+
+.grid-switcher__desktop {
+  @apply hidden lg:flex gap-x-[8px];
+}
+
+.grid-switcher__button {
+  @apply font-black border w-[30px] h-[30px];
+}
+
+.grid-switcher__button--active {
+  @apply bg-black text-white;
+}
+
+.grid-switcher__button--inactive {
+  @apply border-black;
+}

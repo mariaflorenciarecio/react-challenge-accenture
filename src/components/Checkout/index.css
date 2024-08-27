@@ -1,0 +1,76 @@
+.checkout__title {
+  @apply text-black font-black text-xlarge leading-xlarge capitalize;
+}
+
+.checkout__text {
+  @apply text-black font-normal text-medium leading-xlarge;
+}
+
+.checkout__highlight {
+  @apply text-black font-black text-large leading-large;
+}
+
+.checkout__button {
+  @apply text-base lg:text-lg text-black font-black leading-normal uppercase select-none;
+}
+
+.checkout__symbol {
+  @apply focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black cursor-pointer text-black border border-black w-[28px] h-[28px] flex items-center justify-center p-[2px];
+}
+
+.checkout__counter {
+  @apply border border-x-white border-y-black text-black h-full text-center w-[20px] p-[2px];
+}
+
+.checkout__container {
+  @apply flex justify-center items-center bg-white w-full px-[14px] pt-[12px] pb-[67.5px] lg:pt-[40px] lg:pb-[108px];
+  min-height: calc(100vh - 230px);
+
+  @media (min-width: 1024px) {
+    min-height: calc(100vh - 158px);
+  }
+}
+
+.checkout__main {
+  @apply flex w-full flex-col justify-center items-center max-w-[1088px] mx-auto mb-auto;
+}
+
+.checkout__summary {
+  @apply flex flex-col self-start w-full md:w-1/2 mr-[24px];
+}
+
+.checkout__billing {
+  @apply flex flex-col justify-start items-start w-full mt-[24px] lg:mt-0 mb-[12px];
+}
+
+.checkout__form {
+  @apply space-y-[24px];
+}
+
+.checkout__input {
+  @apply text-black font-normal text-medium leading-medium bg-white px-[8px] focus:outline-none focus:ring-white focus:border-black border-b border-black py-[16px] w-full;
+}
+
+.checkout__button-enabled {
+  @apply text-white font-black text-medium leading-medium uppercase select-none focus:outline-none bg-purple focus:ring-transparent w-full text-center py-[12px] cursor-pointer mt-[24px];
+}
+
+.checkout__button-disabled {
+  @apply text-black font-normal text-medium leading-medium bg-gray focus:outline-none focus:ring-transparent w-full text-center py-[12px] mt-[24px] uppercase;
+}
+
+.checkout__modal {
+  @apply inset-0 w-full h-full bg-[#100217E6] justify-center items-center;
+}
+
+.checkout__modal-container {
+  @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white px-[12px] md:px-[16px] py-[48px] flex flex-col justify-center items-center w-[90%] lg:w-[70%];
+}
+
+.checkout__modal-text {
+  @apply text-center md:w-9/12 lg:w-7/12 pb-[16px];
+}
+
+.checkout__modal-button {
+  @apply w-max text-base text-white font-black leading-normal uppercase select-none focus:outline-none bg-purple focus:ring-transparent text-center p-[12px] cursor-pointer;
+}

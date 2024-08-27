@@ -1,0 +1,11 @@
+.footer {
+  @apply flex flex-col justify-center items-center text-center bg-purple pt-[13px] pb-[27px] lg:pt-[19px] lg:pb-[20px];
+}
+
+.footer__container {
+  @apply flex flex-col lg:flex-row gap-x-[66px] gap-y-[15px];
+}
+
+.footer__link {
+  @apply text-white font-normal text-medium leading-medium;
+}  

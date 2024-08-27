@@ -1,0 +1,130 @@
+.header {
+  @apply sticky top-0 left-0 w-full z-50 bg-purple;
+}
+
+.header__container {
+  @apply pt-[24px] pb-[25px] px-[15px] shadow-navbar lg:pt-[18px] lg:pb-[12px] lg:px-[38px];
+}
+
+.header__logo-container {
+  @apply flex relative justify-center lg:pb-[16px];
+}
+
+.header__toggle {
+  @apply lg:hidden focus:outline-none focus:ring-0 absolute left-0 top-[-2px];
+}
+
+.header__toggle-icon {
+  @apply h-[23px];
+}
+
+.header__logo {
+  @apply block cursor-pointer;
+}
+
+.header__logo-img {
+  @apply h-[20px] lg:h-[30px];
+}
+
+.header__icons {
+  @apply flex absolute right-0 bottom-0 lg:bottom-[16px];
+}
+
+.header__icon {
+  @apply hidden lg:block;
+}
+
+.header__icon--search {
+}
+
+.header__icon--account {
+  @apply ml-[14px];
+}
+
+.header__icon-img {
+  @apply h-auto;
+}
+
+.header__links {
+  @apply hidden lg:block;
+}
+
+.header__links-list {
+  @apply flex items-center gap-x-[99px] justify-center;
+}
+
+.header__links-item {
+  @apply text-white text-large leading-large uppercase;
+}
+
+.header__link--active {
+  @apply font-black;
+}
+
+.header__link--inactive {
+  @apply font-normal hover:font-black;
+}
+
+.mobile-menu {
+  @apply lg:hidden absolute inset-0 z-10 flex-col w-full mt-[69px];
+}
+
+.mobile-menu--hidden {
+  @apply hidden;
+}
+
+.mobile-menu--visible {
+  @apply flex;
+}
+
+.mobile-menu__container {
+  @apply px-[15px] bg-white shadow-navbar;
+}
+
+.mobile-menu__links-list {
+  @apply flex flex-col;
+}
+
+.mobile-menu__search {
+  @apply py-[15px] flex items-center border-b border-black;
+}
+
+.mobile-menu__search-box {
+  @apply flex items-center gap-x-[10px] text-sm w-full bg-white;
+}
+
+.mobile-menu__search-icon {
+  @apply h-[20px];
+}
+
+.mobile-menu__search-input {
+  @apply text-black font-normal text-medium leading-medium flex-grow border-none focus:outline-none focus:ring-0 bg-white pt-[5px] pb-0 px-0;
+}
+
+.mobile-menu__links-item {
+  @apply py-[20px] flex items-center border-b border-black;
+}
+
+.mobile-menu__link {
+  @apply text-black font-normal text-medium leading-medium uppercase;
+}
+
+.mobile-menu__link--active {
+  @apply font-black;
+}
+
+.mobile-menu__link--inactive {
+  @apply font-normal hover:font-black;
+}
+
+.mobile-menu__account {
+  @apply py-[20px] flex items-center;
+}
+
+.mobile-menu__account-link {
+  @apply text-black font-normal text-medium leading-medium flex items-center gap-x-[10px] cursor-pointer;
+}
+
+.mobile-menu__account-icon {
+  @apply h-[20px];
+}

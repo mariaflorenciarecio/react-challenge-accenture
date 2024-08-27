@@ -1,0 +1,43 @@
+.filter {
+  @apply w-full lg:max-w-[260px];
+}
+
+.filter__title {
+  @apply text-black font-black text-xlarge leading-xlarge capitalize pb-[8.5px] border-b border-black;
+}
+
+.filter__heading {
+  @apply text-black font-black text-large leading-large capitalize pt-[15.5px] pb-[15px];
+}
+
+.filter__section {
+  @apply mb-[23px];
+}
+
+.filter__toggle {
+  @apply text-black font-black text-medium leading-medium capitalize pt-[4px] pb-[6px] pl-[16px] pr-[12px] mb-[4px] flex items-center justify-between bg-gray w-full;
+}
+
+.filter__icon {
+  @apply text-black w-[20px] h-[20px] transition-transform duration-300;
+}
+
+.filter__icon--open {
+  @apply rotate-180;
+}
+
+.filter__options {
+  @apply flex flex-col hidden;
+}
+
+.filter__options--open {
+  @apply flex flex-col;
+}
+
+.filter__option {
+  @apply text-black font-normal text-medium leading-medium capitalize pl-[16px] flex justify-start;
+}
+
+.filter__option--active {
+  @apply font-black after:text-purple after:font-normal after:text-tiny after:content-['✕'] after:relative after:top-[1px] after:ml-[5px];
+}

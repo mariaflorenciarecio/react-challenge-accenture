@@ -1,0 +1,24 @@
+.item-list {
+  @apply bg-white px-[14px] pt-[12px] pb-[67.5px] lg:pt-[40px] lg:pb-[108px];
+  min-height: calc(100vh - 230px);
+
+  @media (min-width: 1024px) {
+    min-height: calc(100vh - 158px);
+  }
+}
+
+.item-list__container {
+  @apply flex flex-col lg:flex-row justify-center items-start gap-[16px];
+}
+
+.item-list__content {
+  @apply relative flex flex-col gap-y-[15px] w-full max-w-[812px];
+}
+
+.item-list__no-products {
+  @apply text-black font-normal text-medium leading-medium text-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full;
+}
+
+.item-list__grid {
+  @apply grid gap-x-[16px] gap-y-[33px] min-h-[46vh] relative;
+}
