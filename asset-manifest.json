@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-challenge-accenture/static/css/main.dbccfe3d.css",
-    "main.js": "/react-challenge-accenture/static/js/main.7d9e8f92.js",
+    "main.js": "/react-challenge-accenture/static/js/main.0f751f26.js",
     "static/media/loader.gif": "/react-challenge-accenture/static/media/loader.90672f1deffccbcdf4f1.gif",
     "static/media/logo.svg": "/react-challenge-accenture/static/media/logo.9e450d9c9066875ed2e1e6e37bc07edb.svg",
     "static/media/cart.svg": "/react-challenge-accenture/static/media/cart.613563d12670f9b58f30ab1cd7ce867c.svg",
@@ -12,10 +12,10 @@
     "static/media/account-mobile.svg": "/react-challenge-accenture/static/media/account-mobile.8509a500f265dcb7fe80f0bd6147536e.svg",
     "index.html": "/react-challenge-accenture/index.html",
     "main.dbccfe3d.css.map": "/react-challenge-accenture/static/css/main.dbccfe3d.css.map",
-    "main.7d9e8f92.js.map": "/react-challenge-accenture/static/js/main.7d9e8f92.js.map"
+    "main.0f751f26.js.map": "/react-challenge-accenture/static/js/main.0f751f26.js.map"
   },
   "entrypoints": [
     "static/css/main.dbccfe3d.css",
-    "static/js/main.7d9e8f92.js"
+    "static/js/main.0f751f26.js"
   ]
 }
