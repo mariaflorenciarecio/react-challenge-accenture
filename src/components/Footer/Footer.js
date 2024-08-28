@@ -1,13 +1,26 @@
+import { NavLink } from 'react-router-dom';
 import './index.css';
+
+const footerLinks = [
+    { to: '/help', label: 'Ayuda' },
+    { to: '/contact', label: 'Contacto' },
+    { to: '/terms-and-conditions', label: 'Términos y condiciones' },
+    { to: '/privacy-policy', label: 'Políticas de privacidad' }
+];
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer__container">
-                <a href="/#/help" className="footer__link">Ayuda</a>
-                <a href="/#/contact" className="footer__link">Contacto</a>
-                <a href="/#/terms-and-conditions" className="footer__link">Términos y condiciones</a>
-                <a href="/#/privacy-policy" className="footer__link">Políticas de privacidad</a>
+                {footerLinks.map(({ to, label }) => (
+                    <NavLink 
+                        key={to}
+                        to={to}
+                        className={({ isActive }) => `footer__link ${isActive ? 'footer__link--active' : 'footer__link--inactive'}`}
+                    >
+                        {label}
+                    </NavLink>
+                ))}
             </div>
         </footer>
     );
